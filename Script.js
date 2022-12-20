@@ -1,31 +1,11 @@
 const student = "Зима Дмитрий Владимирович"; // Очевидно, что здесь ваши личные Фамилия, Имя и Отчество
-
 document.getElementById("student").innerHTML = student;
-
-// Отсюда и ниже идет ваш код решения домашнего задания
-
-let team1R = prompt ("Введите реальный  счёт первой команды");
-
-let team2R = prompt ("Введите реальный второй команды");
-
-let team1P = prompt ("Предположите счёт первой команды");
-
-let team2P = prompt ("Предположите счёт второй команды");
-
-{
-    if ((team1R==team1P) && (team2R==team2P)) {
-        alert ("Правильно угадан счёт!");
-    }
-    else if ((team1R>team2R) && (team1P>team2P) ) {
-        alert ("Счёт не угадан, но исход правильный");
-    }
-    else if ((team1R==team2R) && (team1P==team2P)) {
-        alert ("Счёт не угадан, но исход правильный");
-    }
-    else if ((team1R<team2R) && (team1P<team2P)) {
-        alert ("Счёт не угадан, но исход правильный");
-    }
-        else {
-        alert ("Не угадали ничего(");
-    }
-    }
+let Jamaica = prompt('Введите реальный счет первой команды'); 
+let Argentina = prompt('Введите реальный счет второй команды'); 
+let Jamaica0 = prompt('Введие предполагаемый счет первой команды'); 
+let Argentina5 = prompt('Введите предполагаемый счет второй команды'); 
+if ((Jamaica==Jamaica0)&&(Argentina==Argentina5))
+{alert('Счет был угадан верно!')}
+else if (((Jamaica==Argentina)&&(Jamaica0==Argentina5)) || ((Jamaica>Argentina)&&(Jamaica0>Argentina5)) || ((Jamaica<Argentina)&&(Jamaica0<Argentina5))) {
+alert('Счет не угадали, но угадали исход!')}
+else {alert('Не угадали ничего(')}
